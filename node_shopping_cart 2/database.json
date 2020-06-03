@@ -1,0 +1,35 @@
+{
+  "products": [
+    {
+      "id": "0",
+      "name": "shirt",
+      "price": "299",
+      "img": "https://placeimg.com/640/480/people"
+    },
+    {
+      "id": "1",
+      "name": "Shoes",
+      "price": "799",
+      "img": "https://placeimg.com/640/481/people"
+    },
+    {
+      "id": "2",
+      "name": "Blazer",
+      "price": "1299",
+      "img": "https://placeimg.com/641/480/people"
+    },
+    {
+      "id": "3",
+      "name": "Jacket",
+      "price": "2999",
+      "img": "https://placeimg.com/640/482/people"
+    },
+    {
+      "id": "4",
+      "name": "Pant",
+      "price": "799",
+      "img": "https://placeimg.com/642/480/people"
+    }
+  ],
+  "cart": []
+}

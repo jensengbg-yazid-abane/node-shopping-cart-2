@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 20px 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+footer {
+  text-align: right;
+  margin: 40px;
+}
+
+a {
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(13, 127, 233, 0.582);
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.26);
+}
+
+body {
+  background-color: rgb(253, 249, 245);
+  max-width: 1300px;
+  margin: auto;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+
+.cart-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.product,
+.item {
+  display: flex;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.product {
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.26);
+  border: 1px solid rgb(192, 180, 180, 0.5);
+  flex-direction: column;
+  width: 250px;
+  height: 370px;
+  margin: 20px;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.item {
+  border-bottom: 1px solid rgba(179, 173, 173, 0.575);
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+.item img {
+  max-width: 30vw;
+  max-height: 150px;
+}
+
+.product h2,
+.item h2 {
+  color: rgb(71, 96, 206);
+  margin: 10px auto 5px 0;
+  font-size: calc(0.7em + 1vw);
+}
+
+.item h2 {
+  padding-left: 10px;
+}
+
+.product h3,
+.item h3 {
+  margin: auto 0 10px auto;
+  font-size: calc(0.5em + 1vw);
+}
+
+.product button,
+.item button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+}
+
+.product button {
+  background-color: rgb(47, 173, 79);
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.26);
+}
+
+.product button:active {
+  top: 1px;
+  box-shadow: none;
+  transition: ease-in 0.2s;
+}
+
+.item button {
+  background-color: rgb(248, 11, 11);
+  width: 20px;
+  height: 20px;
+  font-size: 0.7em;
+}
+
+.product button:hover,
+.item button:hover {
+  cursor: pointer;
+}
+
+.product button:hover {
+  background-color: rgb(54, 202, 91);
+  transition: ease-in 0.2s;
+}
+
+.product button:focus,
+.item button:focus {
+  outline: none;
+}
+
+@media (max-width:600px){
+  header {
+  flex-direction: column;
+  }
+}
+@media  (min-width: 600px) {
+  .product-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .product-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .product-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+

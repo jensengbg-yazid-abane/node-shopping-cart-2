@@ -1,0 +1,31 @@
+{
+  "name": "node_shopping_cart",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "nodemonConfig": {
+    "ext": "js",
+    "ignore": [
+      "*.test.ts",
+      "db/*"
+    ],
+    "delay": "2"
+  },
+  "author": "Yazid Abane",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0"
+  },
+  "description": "Inlämning av e-shop del 2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jensengbg-yazid-abane/shopping_cart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jensengbg-yazid-abane/shopping_cart/issues"
+  },
+  "homepage": "https://github.com/jensengbg-yazid-abane/shopping_cart#readme"
+}
