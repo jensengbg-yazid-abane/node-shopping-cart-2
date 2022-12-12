@@ -16,7 +16,7 @@
   "author": "Yazid Abane",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "lowdb": "^1.0.0"
   },
   "description": "Inlämning av e-shop del 2",
